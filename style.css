@@ -1,0 +1,172 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 4rem;
+}
+ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+a{
+    text-decoration:  none;
+    color: #000;
+}
+
+.login-btn a{
+    border: #000 1px solid ;
+    border-radius: 50px;
+    padding: 5px 20px;
+}
+.menu{
+    display: none;
+}
+
+.hero{
+    /* padding: 40px; */
+    text-align: center;
+}
+.text-hero h1{
+    color: rgb(0, 0, 29);
+    
+}
+.card-hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    padding: 3rem;
+    
+}
+
+/* card 1 */
+.container .card{
+    background-color: rgb(192, 246, 253);
+    padding: 3rem;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 20rem;
+    height: auto;
+}
+.card .h2{
+    font-size: 12px;
+    color: green;
+}
+.card p{
+    margin: 1rem 0;
+    font-size: 14px;
+}
+.card a{
+    color: #fff;
+    font-weight: 500;
+    padding: 8px 25px;
+    border-radius: 50px;
+    background-color: rgb(14, 49, 102);
+    box-shadow: 3px 3px 10px rgb(0, 0, 0, 0.5);
+}
+
+/* card 2 */
+.container .card2{
+    background-color: rgb(255, 255, 173);
+    padding: 3rem;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 20rem;
+    height: auto;
+}
+.card2 .h2{
+    font-size: 12px;
+    color: green;
+}
+.card2 p{
+    margin: 1rem 0;
+    font-size: 14px;
+}
+.card2 a{
+    color: #fff;
+    font-weight: 500;
+    padding: 8px 25px;
+    border-radius: 50px;
+    background-color: rgb(59, 59, 13);
+    box-shadow: 3px 3px 10px rgb(0, 0, 0, 0.5);
+}
+
+/* card3 */
+.container .card3{
+    background-color: rgb(252, 223, 170);
+    padding: 3rem;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 20rem;
+    height: auto;
+}
+.card3 .h2{
+    font-size: 12px;
+    color: green;
+}
+.card3 p{
+    margin: 1rem 0;
+    font-size: 14px;
+}
+.card3 a{
+    color: #fff;
+    font-weight: 500;
+    padding: 8px 25px;
+    border-radius: 50px;
+    background-color: rgb(66, 54, 29);
+    box-shadow: 3px 3px 10px rgb(0, 0, 0, 0.5);
+}
+
+/* card4 */
+
+.container .card4{
+    background-color: rgb(160, 248, 46);
+    padding: 3rem;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 20rem;
+    height: auto;
+}
+.card4 .h2{
+    font-size: 12px;
+    color: green;
+}
+.card4 p{
+    margin: 1rem 0;
+    font-size: 14px;
+}
+.card4 a{
+    color: #fff;
+    font-weight: 500;
+    padding: 8px 25px;
+    border-radius: 50px;
+    background-color: rgb(56, 90, 11);
+    box-shadow: 3px 3px 10px rgb(0, 0, 0, 0.5);
+}
+
+@media (max-width: 500px) {
+    .container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .navlinks, a{
+        display: none;
+    }
+    .menu{
+        display: contents;
+    }
+}
